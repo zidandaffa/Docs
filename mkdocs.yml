@@ -113,7 +113,7 @@ pages:
       - 'nmap: cek username password network neighbourhood windows'          :  Teknik-Hacking/nmap/Cek-Username-Password-Network-Neighbourhood-Windows.md
   - Pemrograman WEB:
     - 'PHP':
-      - 'Pengertian PHP'              : Pemrograman-WEB/Pegertian-php.md
+      - 'Pengertian PHP'              : Pemrograman-WEB/php/Pengertian-php.md
       - 'Prosedur dan Fungsi'         : Pemrograman-WEB/php/prosedurFungsi.md
       - 'Increment'                   : Pemrograman-WEB/php/increment.md
       - 'PSR'                         : Pemrograman-WEB/php/psr.md
