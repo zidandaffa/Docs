@@ -1,0 +1,164 @@
+# Project information
+site_name: Zidan Daffa
+site_url: https://sizidan.id/
+site_author: Zidan Daffa
+site_description: Dokumentasi Pribadi
+
+
+# Repository
+#repo_name: ZidanDaffa
+#repo_url: https://github.com/zidandaffa
+#edit_uri: ""
+
+# Copyright
+copyright: Copyright &copy; 2019 Zidan Daffa
+
+# Configuration
+theme:
+  name: null
+  custom_dir: material
+
+  # 404 page
+  static_templates:
+    - 404.html
+
+  # Don't include MkDocs' JavaScript
+  include_search_page: false
+  search_index_only: true
+
+  # Default values, taken from mkdocs_theme.yml
+  language: en
+  features:
+    #- tabs
+    - instant
+  palette:
+    scheme: slate
+    primary: blue
+    accent: light-blue
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    logo: logo
+  favicon: assets/favicon.png
+
+# Plugins
+plugins:
+  - search
+  - minify:
+      minify_html: true
+
+# Customization
+#extra_css:
+  #- 'assets/css/dark-theme.css'
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/zidandaffa
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/zidandaffa
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/zidandaffa/
+    - icon: fontawesome/brands/instagram
+      link: https://instagram.com/zidandaffa
+
+# Extensions
+markdown_extensions:
+  - markdown.extensions.admonition
+  - markdown.extensions.attr_list
+  - markdown.extensions.codehilite:
+      guess_lang: false
+  - markdown.extensions.def_list
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown.extensions.toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  # - pymdownx.highlight:
+  #     linenums_style: pymdownx-inline
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Page tree
+pages:
+  - Home: index.md
+  - Teknik Hacking:
+    - 'Pengetahuan Umum'              : Teknik-Hacking/Pengetahuan-Umum.md
+    - 'Serangan Ke Windows':
+      - '3 Tahap Membuka Password Windows dengan Ubuntu'            :  Teknik-Hacking/Windows/3-Tahap-Membuka-Password-Windows-dengan-Ubuntu.md
+    - 'Scanner':
+      - 'nmap: serang SQL'              :  Teknik-Hacking/nmap/Serang-SQL-Menggunakan-NMAP.md
+      - 'nmap: cek SQL Injection'       :  Teknik-Hacking/nmap/Cek-SQL-Injection-Menggunakan-NMAP.md
+      - 'nmap: cek username password network neighbourhood windows'          :  Teknik-Hacking/nmap/Cek-Username-Password-Network-Neighbourhood-Windows.md
+  - Pemrograman WEB:
+    - 'PHP':
+      - 'Pengertian PHP'              : Pemrograman-WEB/php/Pengertian-php.md
+      - 'Prosedur dan Fungsi'         : Pemrograman-WEB/php/prosedurFungsi.md
+      - 'Increment'                   : Pemrograman-WEB/php/increment.md
+      - 'PSR'                         : Pemrograman-WEB/php/psr.md
+      - 'Looping':
+          - 'Pengertian Looping'        : Pemrograman-WEB/php/looping/Pengerian-looping.md
+          - 'For'                       : Pemrograman-WEB/php/looping/for.md
+          - 'While'                     : Pemrograman-WEB/php/looping/while.md
+          - 'Do While'                  : Pemrograman-WEB/php/looping/doWhile.md
+          - 'Foreach'                   : Pemrograman-WEB/php/looping/foreach.md
+      - 'Keyword PHP':
+          - 'Daftar Keyword'            : Pemrograman-WEB/php/Keyword-PHP/Keyword-php.md
+          - 'And'                       : Pemrograman-WEB/php/Keyword-PHP/Keyword-php-and.md
+          - 'Array'                     : Pemrograman-WEB/php/Keyword-PHP/Keyword-php-array.md
+          - 'Break'                     : Pemrograman-WEB/php/Keyword-PHP/Keyword-php-break.md
+          - 'Catch'                     : Pemrograman-WEB/php/Keyword-PHP/Keyword-php-catch.md
+          - 'Class'                     : Pemrograman-WEB/php/Keyword-PHP/Keyword-php-class.md
+          - 'Continue'                  : Pemrograman-WEB/php/Keyword-PHP/Keyword-php-continue.md
+          - 'Do While'                  : Pemrograman-WEB/php/Keyword-PHP/Keyword-php-do-While.md
+          - 'Echo'                      : Pemrograman-WEB/php/Keyword-PHP/Keyword-php-echo.md
+          - 'Extends'                   : Pemrograman-WEB/php/Keyword-PHP/Keyword-php-extends.md
+          - 'For'                       : Pemrograman-WEB/php/Keyword-PHP/Keyword-php-for.md
+          - 'Foreach'                   : Pemrograman-WEB/php/Keyword-PHP/Keyword-php-foreach.md
+          - 'Function'                  : Pemrograman-WEB/php/Keyword-PHP/Keyword-php-function.md
+          - 'If'                        : Pemrograman-WEB/php/Keyword-PHP/Keyword-php-if.md
+          - 'If else'                   : Pemrograman-WEB/php/Keyword-PHP/Keyword-php-if-Else.md
+          - 'If elseif else'            : Pemrograman-WEB/php/Keyword-PHP/Keyword-php-if-Else-if-Else.md
+          - 'Include'                   : Pemrograman-WEB/php/Keyword-PHP/Keyword-php-include.md
+          - 'Isset'                     : Pemrograman-WEB/php/Keyword-PHP/Keyword-php-isset.md
+          - 'Or'                        : Pemrograman-WEB/php/Keyword-PHP/Keyword-php-or.md
+          - 'Print'                     : Pemrograman-WEB/php/Keyword-PHP/Keyword-php-print.md
+          - 'Private'                   : Pemrograman-WEB/php/Keyword-PHP/Keyword-php-private.md
+          - 'Protected'                 : Pemrograman-WEB/php/Keyword-PHP/Keyword-php-protected.md
+          - 'Public'                    : Pemrograman-WEB/php/Keyword-PHP/Keyword-php-public.md
+          - 'Require'                   : Pemrograman-WEB/php/Keyword-PHP/Keyword-php-require.md
+          - 'Require once'              : Pemrograman-WEB/php/Keyword-PHP/Keyword-php-require-Once.md
+          - 'Return'                    : Pemrograman-WEB/php/Keyword-PHP/Keyword-php-return.md
+          - 'Static'                    : Pemrograman-WEB/php/Keyword-PHP/Keyword-php-static.md
+          - 'Switch'                    : Pemrograman-WEB/php/Keyword-PHP/Keyword-php-switch.md
+          - 'Try'                       : Pemrograman-WEB/php/Keyword-PHP/Keyword-php-try.md
+          - 'Unset'                     : Pemrograman-WEB/php/Keyword-PHP/Keyword-php-unset.md
+          - 'While'                     : Pemrograman-WEB/php/Keyword-PHP/Keyword-php-while.md
+      - 'OOP':
+          - 'Object Oriented Programming(OOP)'             : Pemrograman-WEB/php/oop/Object-Oriented-Programming.md
+
+# Google Analytics
+google_analytics:
+  - !!python/object/apply:os.getenv ["GOOGLE_ANALYTICS_KEY"]
+  - auto
